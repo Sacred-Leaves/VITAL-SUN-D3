@@ -1,199 +1,220 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vital Sun D3 - Описание Продукта</title>
-    <!-- Tailwind CSS CDN для легкого стилизации -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Vital Sun D3 - Product Description</title>
     <style>
+        /* General Styles */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6; /* Светло-серый фон */
-            color: #374151; /* Темно-серый текст */
             line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb; /* Light gray background */
+            color: #374151; /* Dark gray text */
         }
-        
-       
-       
+
+        /* Container Styles */
+        .container {
+            width: 60%; /* Always 60% of screen width */
+            margin: 2rem auto; /* Centered horizontally */
+            padding: 2rem;
+            background-color: #ffffff; /* White background */
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%; /* Almost full width on mobile */
+                padding: 1.5rem;
+            }
+        }
+
+        /* Headings */
         h1 {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #1f2937; /* Более темный заголовок */
+            color: #1f2937;
             margin-bottom: 1.5rem;
             text-align: center;
         }
         h2 {
             font-size: 1.8rem;
             font-weight: 600;
-            color: #2563eb; /* Синий для заголовков разделов */
+            color: #2563eb;
             margin-top: 2rem;
             margin-bottom: 1rem;
-            border-bottom: 2px solid #eff6ff; /* Светло-синее подчеркивание */
+            border-bottom: 2px solid #eff6ff;
             padding-bottom: 0.5rem;
+            width: 100%;
+            text-align: left;
         }
+
+        /* Paragraphs */
         p {
             margin-bottom: 1rem;
+            text-align: left;
+            width: 100%;
         }
+
+        /* Lists */
         ul {
-            list-style: none; /* Удалить стандартные маркеры */
+            list-style: none;
             padding-left: 0;
+            width: 100%;
         }
         ul li {
             display: flex;
             align-items: flex-start;
             margin-bottom: 0.75rem;
+            text-align: left;
         }
         .check-icon {
-            color: #10b981; /* Зеленая галочка */
-            font-weight: bold;
-            margin-right: 0.75rem;
-            flex-shrink: 0; /* Предотвратить сжатие иконки */
-            font-size: 1.2rem;
-        }
-        .cross-icon {
-            color: #ef4444; /* Красный крестик */
+            color: #10b981;
             font-weight: bold;
             margin-right: 0.75rem;
             flex-shrink: 0;
             font-size: 1.2rem;
         }
+        .cross-icon {
+            color: #ef4444;
+            font-weight: bold;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+            font-size: 1.2rem;
+        }
+
+        /* Section Separator */
         .section-separator {
-            border-top: 1px dashed #d1d5db; /* Пунктирная линия для тонкого разделения */
+            border-top: 1px dashed #d1d5db;
             margin-top: 2rem;
             margin-bottom: 2rem;
+            width: 100%;
         }
+
+        /* Rounded Pill */
         .rounded-pill {
             display: inline-block;
-            background-color: #bfdbfe; /* Светло-синий для "таблетки" */
-            color: #1e40af; /* Темно-синий текст */
+            background-color: #bfdbfe;
+            color: #1e40af;
             padding: 0.3rem 0.8rem;
-            border-radius: 9999px; /* Полностью закругленные */
+            border-radius: 9999px;
             font-size: 0.85rem;
             font-weight: 600;
             margin-bottom: 1rem;
             text-align: center;
-            width: 100%;
         }
+
+        /* Logo */
         .logo {
             display: block;
             margin: 0 auto 1.5rem auto;
-            max-width: 200px; /* Увеличим максимальную ширину для лучшей видимости логотипа */
+            max-width: 200px;
             height: auto;
-            background-color: #ffffff; /* Белый фон для области логотипа */
-            padding: 10px; /* Небольшой отступ вокруг логотипа */
-            border-radius: 8px; /* Немного закругленные углы */
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 8px;
         }
+
+        /* Warning Text */
         .warning-text {
-            color: #d97706; /* Оранжевый цвет для предупреждений */
+            color: #d97706;
             font-weight: 600;
-        }
-         .container{
-            
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width : 60%;
-            margin-top: 5%;
-            
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Логотип продукта -->
-        <!-- Замените '[YOUR_BASE64_IMAGE_DATA_HERE]' на вашу строку Base64. -->
-        <!-- Это будет выглядеть примерно так: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA... (очень длинная строка) -->
-        <img src="image.png" alt="Vital Sun D3 Logo" class="logo">
+        <!-- Logo -->
+        <img src="image.html" class="logo">
 
-        <h1 class="text-gray-900">☀️ Vital Sun D3</h1>
-        <div class="rounded-pill">Высокоактивная форма витамина D3 для здоровья костей, иммунитета и общего самочувствия.</div>
+        <!-- Title -->
+        <h1>☀️ Vital Sun D3</h1>
 
-        <p class="mt-4 text-center text-lg italic text-gray-600">
-            Vital Sun D3 — это мощная нутрицевтическая добавка, содержащая витамин D3 в высокоэффективной дозировке 5000 МЕ.
-            Формула разработана для восполнения дефицита витамина D, укрепления костной ткани, поддержки иммунной системы
-            и оптимизации общего обмена веществ.
+        <!-- Tagline -->
+        <div class="rounded-pill">Highly active form of vitamin D3 for bone health, immunity, and overall well-being.</div>
+
+        <!-- Introduction -->
+        <p>
+            Vital Sun D3 is a powerful nutraceutical supplement containing vitamin D3 in a highly effective dosage of 5000 IU. The formula is designed to compensate for vitamin D deficiency, strengthen bone tissue, support the immune system, and optimize overall metabolism.
         </p>
 
-        <h2>Состав и активные компоненты (на 1 капсулу)</h2>
+        <!-- Composition -->
+        <h2>Composition and Active Components (per 1 capsule)</h2>
         <ul>
-            <li><span class="check-icon">&#10003;</span> Витамин D3 (холекальциферол) — 5000 международных единиц (МЕ)</li>
+            <li><span class="check-icon">&#10003;</span> Vitamin D3 (cholecalciferol) – 5000 international units (IU)</li>
+        </ul>
+        <p><strong>Release Form:</strong> 60 vegetarian capsules in a glass bottle.</p>
+
+        <!-- How It Works -->
+        <h2>How the Product Works</h2>
+        <ul>
+            <li><span class="check-icon">&#10003;</span> Vitamin D3 (cholecalciferol) is a vital fat-soluble vitamin that plays a key role in regulating calcium-phosphorus metabolism, ensuring the strength of bones and teeth.</li>
+            <li><span class="check-icon">&#10003;</span> Strengthens the immune system, promotes the body's resistance to infections.</li>
+            <li><span class="check-icon">&#10003;</span> Participates in maintaining normal functioning of the cardiovascular system and nerve conduction.</li>
+            <li><span class="check-icon">&#10003;</span> Helps reduce the risk of inflammation and autoimmune diseases.</li>
         </ul>
 
-        <p><strong>Форма выпуска:</strong> 60 вегетарианских капсул в стеклянной бутылке.</p>
-
-        <div class="section-separator"></div>
-
-        <h2>Как работает продукт</h2>
+        <!-- Indications -->
+        <h2>Main Indications for Use</h2>
         <ul>
-            <li><span class="check-icon">&#10003;</span> Витамин D3 (холекальциферол) — жизненно важный жирорастворимый витамин, играющий ключевую роль в регуляции кальциево-фосфорного обмена, обеспечивая прочность костей и зубов.</li>
-            <li><span class="check-icon">&#10003;</span> Укрепляет иммунную систему, способствует сопротивляемости организма к инфекциям.</li>
-            <li><span class="check-icon">&#10003;</span> Участвует в поддержании нормальной работы сердечно-сосудистой системы и нервной проводимости.</li>
-            <li><span class="check-icon">&#10003;</span> Способствует снижению риска воспалительных процессов и аутоиммунных заболеваний.</li>
+            <li><span class="check-icon">&#10003;</span> Vitamin D deficiency (confirmed by analysis or presence of risk factors).</li>
+            <li><span class="check-icon">&#10003;</span> Support for bone health (prevention of osteoporosis).</li>
+            <li><span class="check-icon">&#10003;</span> Weakened immune system, frequent colds.</li>
+            <li><span class="check-icon">&#10003;</span> Periods of insufficient sun exposure (winter, indoor work).</li>
+            <li><span class="check-icon">&#10003;</span> Chronic fatigue, muscle weakness.</li>
+            <li><span class="check-icon">&#10003;</span> Heart and vascular health support.</li>
         </ul>
 
-        <div class="section-separator"></div>
-
-        <h2>Основные показания к применению</h2>
+        <!-- Usage Recommendations -->
+        <h2>Usage Recommendations</h2>
         <ul>
-            <li><span class="check-icon">&#10003;</span> Дефицит витамина D (подтвержденный анализами или при наличии факторов риска)</li>
-            <li><span class="check-icon">&#10003;</span> Поддержка здоровья костной системы (профилактика остеопороза)</li>
-            <li><span class="check-icon">&#10003;</span> Ослабленный иммунитет, частые простудные заболевания</li>
-            <li><span class="check-icon">&#10003;</span> Периоды недостаточного пребывания на солнце (зима, работа в помещении)</li>
-            <li><span class="check-icon">&#10003;</span> Хроническая усталость, мышечная слабость</li>
-            <li><span class="check-icon">&#10003;</span> Поддержка здоровья сердца и сосудов</li>
+            <li><span class="check-icon">&#10003;</span> <strong>Adults:</strong> 1 capsule per day during meals (preferably with fatty foods for better absorption).</li>
+            <li><span class="check-icon">&#10003;</span> <strong>Recommended Course:</strong> 2–3 months or as prescribed by a doctor.</li>
+            <li><span class="cross-icon">&#9888;</span> <span class="warning-text">Important:</span> Before starting use, it is advisable to determine the level of vitamin D in the blood (25(OH)D) and consult a doctor, especially for long-term use.</li>
         </ul>
 
-        <div class="section-separator"></div>
-
-        <h2>Рекомендации по применению</h2>
+        <!-- Contraindications -->
+        <h2>Contraindications</h2>
         <ul>
-            <li><span class="check-icon">&#10003;</span> <strong>Взрослым:</strong> по 1 капсуле 1 раз в день во время еды (желательно с продуктами, содержащими жиры для лучшего усвоения).</li>
-            <li><span class="check-icon">&#10003;</span> <strong>Рекомендуемый курс:</strong> 2–3 месяца или по назначению врача.</li>
-            <li><span class="cross-icon">&#9888;</span> <span class="warning-text">Важно:</span> перед началом приема желательно определить уровень витамина D в крови (25(OH)D) и консультироваться с врачом, особенно при длительном приеме.</li>
+            <li><span class="cross-icon">&#10006;</span> Individual intolerance to components.</li>
+            <li><span class="cross-icon">&#10006;</span> Hypercalcemia (elevated calcium levels in the blood).</li>
+            <li><span class="cross-icon">&#10006;</span> Severe forms of kidney disease.</li>
+            <li><span class="cross-icon">&#10006;</span> Pregnancy and lactation — use only under medical supervision.</li>
         </ul>
 
-        <div class="section-separator"></div>
-
-        <h2>Противопоказания</h2>
+        <!-- Who Should Use It -->
+        <h2>Who Is Especially Recommended to Use</h2>
         <ul>
-            <li><span class="cross-icon">&#10006;</span> Индивидуальная непереносимость компонентов.</li>
-            <li><span class="cross-icon">&#10006;</span> Гиперкальциемия (повышенный уровень кальция в крови).</li>
-            <li><span class="cross-icon">&#10006;</span> Тяжелые формы заболеваний почек.</li>
-            <li><span class="cross-icon">&#10006;</span> Беременность и период лактации — приём только по рекомендации врача.</li>
+            <li><span class="check-icon">&#10003;</span> People who spend little time outdoors (urban lifestyle, winter).</li>
+            <li><span class="check-icon">&#10003;</span> Elderly people for prevention of osteoporosis.</li>
+            <li><span class="check-icon">&#10003;</span> Patients with chronic inflammatory diseases.</li>
+            <li><span class="check-icon">&#10003;</span> Women in menopause.</li>
+            <li><span class="check-icon">&#10003;</span> Individuals with excess body weight (often experience vitamin D deficiency).</li>
         </ul>
 
-        <div class="section-separator"></div>
-
-        <h2>Кому особенно рекомендуется</h2>
+        <!-- Why Choose Vital Sun D3 -->
+        <h2>Why Choose Vital Sun D3</h2>
         <ul>
-            <li><span class="check-icon">&#10003;</span> Людям, мало бывающим на солнце (городской образ жизни, зима)</li>
-            <li><span class="check-icon">&#10003;</span> Пожилым людям для профилактики остеопороза</li>
-            <li><span class="check-icon">&#10003;</span> Пациентам с хроническими воспалительными заболеваниями</li>
-            <li><span class="check-icon">&#10003;</span> Женщинам в период менопаузы</li>
-            <li><span class="check-icon">&#10003;</span> Лицам с избыточной массой тела (у них часто наблюдается дефицит витамина D)</li>
+            <li><span class="check-icon">&#10003;</span> Optimal clinical dose of 5000 IU for rapid compensation of deficiency.</li>
+            <li><span class="check-icon">&#10003;</span> High bioavailability of cholecalciferol.</li>
+            <li><span class="check-icon">&#10003;</span> Suitable for vegetarians.</li>
+            <li><span class="check-icon">&#10003;</span> Free from GMOs, gluten, lactose, and artificial additives.</li>
+            <li><span class="check-icon">&#10003;</span> Packaged in a glass bottle for protection against oxidation.</li>
+            <li><span class="check-icon">&#10003;</span> Manufactured according to international GMP standards.</li>
         </ul>
 
-        <div class="section-separator"></div>
-
-        <h2>Почему выбрать Vital Sun D3</h2>
+        <!-- Additional Notes -->
+        <h2>Additional Notes</h2>
         <ul>
-            <li><span class="check-icon">&#10003;</span> Оптимальная клиническая доза 5000 МЕ для быстрого восполнения дефицита.</li>
-            <li><span class="check-icon">&#10003;</span> Высокая биодоступность холекальциферола.</li>
-            <li><span class="check-icon">&#10003;</span> Подходит для вегетарианцев.</li>
-            <li><span class="check-icon">&#10003;</span> Без ГМО, глютена, лактозы и искусственных добавок.</li>
-            <li><span class="check-icon">&#10003;</span> Упаковано в стеклянную бутылку для защиты от окисления.</li>
-            <li><span class="check-icon">&#10003;</span> Производство в соответствии с международными стандартами GMP.</li>
-        </ul>
-
-        <div class="section-separator"></div>
-
-        <h2>Дополнительные замечания</h2>
-        <ul>
-            <li><span class="cross-icon">&#9888;</span> <span class="warning-text">При приеме высоких доз витамина D необходимо контролировать уровень кальция в крови.</span></li>
-            <li><span class="cross-icon">&#9888;</span> <span class="warning-text">В случае продолжительного применения рекомендуется медицинское наблюдение.</span></li>
+            <li><span class="cross-icon">&#9888;</span> <span class="warning-text">When taking high doses of vitamin D, it is necessary to monitor calcium levels in the blood.</span></li>
+            <li><span class="cross-icon">&#9888;</span> <span class="warning-text">In case of prolonged use, medical supervision is recommended.</span></li>
         </ul>
     </div>
 </body>
